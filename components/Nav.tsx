@@ -1,6 +1,6 @@
 "use client";
 
-import { routesArray } from "@/models/routes";
+import { routesArray } from "@/models/data";
 import Link from "next/link";
 
 export const Nav = () => {

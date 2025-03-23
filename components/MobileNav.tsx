@@ -1,8 +1,8 @@
 
-import { routes, routesArray } from '@/models/routes'
+import { routes, routesArray } from '@/models/data'
 import { MenuIcon } from 'lucide-react'
 import Link from 'next/link'
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from './ui/sheet'
+import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from './ui/sheet'
 
 export const MobileNav = () => {
     return (
@@ -25,7 +25,9 @@ export const MobileNav = () => {
                             href={item.path}
                             className='text-xl capitalize hover:text-green-400'
                         >
-                            {item.label}
+                            <SheetClose>
+                                {item.label}
+                            </SheetClose>
                         </Link>
                     ))}
                 </nav>

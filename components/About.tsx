@@ -5,7 +5,7 @@ import { Photo } from './Photo'
 
 export const About = () => {
     return (
-        <section className='py-16 px-16 md:px-32 md:py-12' id='about' >
+        <section className='py-16 px-16 md:px-32 md:py-12 border-b-2' id='about' >
             <div className="container mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="order-2 md:order-none">

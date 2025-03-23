@@ -1,4 +1,4 @@
-import { socials } from '@/models/routes'
+import { socials } from '@/models/data'
 import Link from 'next/link'
 import React from 'react'
 
