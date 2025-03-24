@@ -1,7 +1,10 @@
+"use client"
+
 import { Download } from 'lucide-react'
 import { Social } from './Social'
 import { Button } from './ui/button'
 import { Photo } from './Photo'
+import Link from 'next/link'
 
 export const About = () => {
     return (
@@ -22,10 +25,12 @@ export const About = () => {
                         </p>
 
                         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                            <Button variant='link' size='lg' className='uppercase flex items-center gap-2 font-bold'>
-                                <span>Descarga CV</span>
-                                <Download className='text-lx' />
-                            </Button>
+                            <Link href='CV_Marlon_Ortega.pdf' download target='_blank' rel='noreferrer'>
+                                <Button variant='link' size='lg' className='uppercase flex items-center gap-2 font-bold'>
+                                    <span>Descarga CV</span>
+                                    <Download className='text-lx' />
+                                </Button>
+                            </Link>
                             <Social
                                 containerStyle="flex gap-6"
                                 iconStyle="w-9 h-9 border border-green-400 rounded-full flex justify-center items-center text-green-400 hover:bg-green-400/90 hover:text-black hover:transition-all duration-500"

@@ -4,10 +4,10 @@ import { routes } from '@/models/data'
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { MobileNav } from './MobileNav'
 import { Nav } from './Nav'
 import { Button } from './ui/button'
-import { MobileNav } from './MobileNav'
-import { usePathname } from 'next/navigation'
 
 export const Header = () => {
 

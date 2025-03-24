@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardTitle } from './ui/
 export const Projects = () => {
     return (
         <section className='py-16 px-16 md:px-32 md:py-12 border-b-2' id='projects'>
-            <div className="container mx-auto">
+            <div className="container mx-auto flex flex-col items-center">
                 <h1 className='text-3xl'>Proyectos destacados</h1>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-16 mt-16'>
                     {proyects.slice(0, 3).map(item => (
@@ -19,30 +19,30 @@ export const Projects = () => {
                                 </Link>
                             </CardContent>
                             <CardFooter className='flex flex-col gap-2'>
-                                <CardTitle>{item.title}</CardTitle>
+                                <CardTitle className='text-xl font-bold uppercase'>{item.title}</CardTitle>
                                 <CardDescription className='h-[80px]'>{item.shor_description}</CardDescription>
                                 <div className='flex flex-row gap-4'>
-                                    <Link href={item.link} target='_blank' rel='noreferrer'>
-                                        <Button variant='outline' size='icon'>
+                                    <Button variant='outline' size='icon' disabled={item.link === ''}>
+                                        <Link href={item.link} target='_blank' rel='noreferrer'>
                                             {item.icon}
-                                        </Button>
-                                    </Link>
-                                    <Link href={routes.project + item.slug}>
-                                        <Button variant='outline' size='icon'>
+                                        </Link>
+                                    </Button>
+                                    <Button variant='outline' size='icon'>
+                                        <Link href={routes.project + item.slug}>
                                             <AiOutlineAim />
-                                        </Button>
-                                    </Link>
+                                        </Link>
+                                    </Button>
                                 </div>
                             </CardFooter>
                         </Card>
                     ))}
                 </div>
                 <div className='flex justify-center mt-16'>
-                    <Link href={routes.project + proyects[0].slug} className='text-xl capitalize hover:text-green-400'>
-                        <Button size='lg'>
+                    <Button size='lg' className='capitalize font-bold'>
+                        <Link href={routes.project + proyects[0].slug} >
                             Ver todos
-                        </Button>
-                    </Link>
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </section>

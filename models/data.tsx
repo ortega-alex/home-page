@@ -1,15 +1,16 @@
+import { Technology } from '@/components/Technology'
 import { DiNodejs } from 'react-icons/di'
-import { FaGithub, FaLinkedin, FaPhp, FaReact } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin, FaPhp, FaReact } from 'react-icons/fa'
 import { LiaDocker } from 'react-icons/lia'
 import { RiNextjsLine } from 'react-icons/ri'
-import { SiAntdesign, SiExpress, SiFirebase, SiGooglemaps, SiMongodb, SiMysql, SiNestjs, SiPrisma, SiShadcnui, SiTailwindcss, SiTypeorm } from 'react-icons/si'
+import { SiAntdesign, SiExpress, SiFirebase, SiGooglemaps, SiLaravel, SiMongodb, SiMysql, SiNestjs, SiPrisma, SiShadcnui, SiTailwindcss, SiTypeorm } from 'react-icons/si'
 import { TbBrandReactNative } from 'react-icons/tb'
 
 export const routes = {
     about: '#about',
     experience: '#experience',
     projects: '#projects',
-    contact: '#contact',
+    technologys: '#technologys',
     project: '/projects/',
 }
 
@@ -17,10 +18,16 @@ export const routesArray = [
     { path: routes.about, label: 'Acerca de mi' },
     { path: routes.projects, label: 'Proyectos' },
     { path: routes.experience, label: 'Experiencia' },
-    { path: routes.contact, label: 'Concactame' },
+    { path: routes.technologys, label: 'Tecnologias' },
 ]
 
-export const socials = [
+export type Social = {
+    name: string
+    icon: React.ReactNode
+    link: string
+}
+
+export const socials: Social[] = [
     {
         name: 'Github',
         icon: <FaGithub />,
@@ -30,6 +37,11 @@ export const socials = [
         name: 'Linkedin',
         icon: <FaLinkedin />,
         link: 'https://www.linkedin.com/in/alex-ortega-4921a5231/'
+    },
+    {
+        name: 'Email',
+        icon: <FaEnvelope />,
+        link: 'mailto:mortegalex27@outlook.es'
     }
 ]
 
@@ -65,13 +77,13 @@ export const proyects: Proyect[] = [
             { name: 'Prisma', icon: <SiPrisma /> },
             { name: 'Shadcnui', icon: <SiShadcnui /> },
             { name: 'Docker', icon: <LiaDocker /> },
-            { name: 'Tailwin CSS', icon: <SiTailwindcss /> }
+            { name: 'Tailwin', icon: <SiTailwindcss /> }
         ]
     },
     {
         slug: 'smart-logistic',
         title: 'Smart Logistic',
-        shor_description: 'SmartLogistic es un sistema de gestión de exportacion de vehículos, permitiendo a la empresa poder gestionar, cotizar, registrar y exportar los vehículos de manera eficiente y segura.',
+        shor_description: 'Smart Logistic es un sistema de gestión de exportacion de vehículos eficiente y segura.',
         description: 'SmartLogistic es un sistema de gestión de exportacion de vehículos, permitiendo a la empresa poder gestionar, cotizar, registrar y exportar los vehículos de manera eficiente y segura. Actualmente se encuentra en fase de desarrollo y planificación, pero el objetivo es poder ofrecer una solución completa para la gestión de exportación de vehículos.',
         image: '/smart-logistic.jpg',
         link: 'https://github.com/ortega-alex/smart-logistic',
@@ -106,5 +118,65 @@ export const proyects: Proyect[] = [
             { name: 'Firebase', icon: <SiFirebase /> },
             { name: 'Maps', icon: <SiGooglemaps /> }
         ]
+    }
+]
+
+export const expreriences = [
+    {
+        num: '01',
+        title: 'Analista Programador',
+        company: 'Consolidados Ochocientos (C807)',
+        startDate: '2017',
+        endDate: '2018',
+        link: 'https://c807.com/gt/en/',
+    },
+
+    {
+        num: '02',
+        title: 'Desarrollador de Apps ',
+        company: 'AdvanCel (Start-up)',
+        startDate: '2018',
+        endDate: '2019',
+        link: '',
+    },
+    {
+        num: '03',
+        title: 'Desarrollador FullStack',
+        company: 'Oca',
+        startDate: '2019',
+        endDate: '2025',
+        link: 'https://www.ocacall.com/',
+    },
+]
+
+export type Technology = {
+    name: string
+    icon: React.ReactNode
+}
+
+export const technologies: Technology[] = [
+    {
+        name: 'React.js',
+        icon: <FaReact />,
+    },
+    {
+        name: 'Next.js',
+        icon: <RiNextjsLine />,
+    },
+    {
+        name: 'NestJS',
+        icon: <SiNestjs />,
+    },
+    {
+        name: 'MongoDB',
+        icon: <SiMongodb />,
+    },
+    {
+        name: 'Laravel',
+        icon: <SiLaravel />,
+    },
+    {
+        name: 'Docker',
+        icon: <LiaDocker />,
     }
 ]

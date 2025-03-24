@@ -33,6 +33,7 @@ body {
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --text-stroke: 0, 0, 0, 0.5;
   }
  
   .dark {
@@ -60,12 +61,16 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --text-stroke: 255, 255, 255;
   }
 }
 
 @layer base {
   * {
     @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;    
   }
   body {
     @apply bg-background text-foreground;
@@ -79,5 +84,9 @@ body {
   }
   h3 {
     @apply text-[20] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #00ff99;
   }
 }
