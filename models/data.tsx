@@ -15,10 +15,10 @@ export const routes = {
 }
 
 export const routesArray = [
-    { path: routes.about, label: 'Acerca de mi' },
+    { path: routes.about, label: 'Acerca de mí' },
     { path: routes.projects, label: 'Proyectos' },
     { path: routes.experience, label: 'Experiencia' },
-    { path: routes.technologys, label: 'Tecnologias' },
+    { path: routes.technologys, label: 'Tecnologías' },
 ]
 
 export type Social = {
@@ -83,8 +83,8 @@ export const proyects: Proyect[] = [
     {
         slug: 'smart-logistic',
         title: 'Smart Logistic',
-        shor_description: 'Smart Logistic es un sistema de gestión de exportacion de vehículos eficiente y segura.',
-        description: 'SmartLogistic es un sistema de gestión de exportacion de vehículos, permitiendo a la empresa poder gestionar, cotizar, registrar y exportar los vehículos de manera eficiente y segura. Actualmente se encuentra en fase de desarrollo y planificación, pero el objetivo es poder ofrecer una solución completa para la gestión de exportación de vehículos.',
+        shor_description: 'Smart Logistic es un sistema de gestión de exportación de vehículos eficiente y seguro.',
+        description: 'SmartLogistic es un sistema de gestión de exportación de vehículos, permitiendo a la empresa poder gestionar, cotizar, registrar y exportar los vehículos de manera eficiente y segura. Actualmente se encuentra en fase de desarrollo y planificación, pero el objetivo es poder ofrecer una solución completa para la gestión de exportación de vehículos.',
         image: '/smart-logistic.jpg',
         link: 'https://github.com/ortega-alex/smart-logistic',
         icon: <FaGithub />,
@@ -99,10 +99,10 @@ export const proyects: Proyect[] = [
         ]
     },
     {
-        slug: 'llevalo',
-        title: 'Llevalo',
-        shor_description: 'Llevalo es una aplicación web y aplicacion movil para realizar compras en linea con servicio adomicilio.',
-        description: 'Llevalo es una aplicación web y aplicacion movil para realizar compras en linea con servicio adomicilio. Esta aplicación se ha desarrollado para ayudar a los clientes a realizar sus compras de manera rápida y eficiente, sin tener que esperar a que el servicio adomicilio se lleve a cabo. La aplicación se basa en una plataforma de comercio electrónico construida con React Native, React js, Php, Node.js y Mysql.',
+        slug: 'llevaloo',
+        title: 'Llevaloo',
+        shor_description: 'Llevaloo es una aplicación web y aplicación móvil para realizar compras en línea con servicio a domicilio.',
+        description: 'Llevaloo es una aplicación web y aplicación móvil para realizar compras en línea con servicio a domicilio. Esta aplicación se ha desarrollado para ayudar a los clientes a realizar sus compras de manera rápida y eficiente, sin tener que esperar a que el servicio a domicilio se lleve a cabo. La aplicación se basa en una plataforma de comercio electrónico construida con React Native, React.js, PHP, Node.js y MySQL.',
         image: '/llevalo.jpg',
         link: 'https://github.com/ortega-alex/llevaloo',
         icon: <FaGithub />,
@@ -124,7 +124,7 @@ export const proyects: Proyect[] = [
 export const expreriences = [
     {
         num: '01',
-        title: 'Analista Programador',
+        title: 'Analista programador',
         company: 'Consolidados Ochocientos (C807)',
         startDate: '2017',
         endDate: '2018',
@@ -133,7 +133,7 @@ export const expreriences = [
 
     {
         num: '02',
-        title: 'Desarrollador de Apps ',
+        title: 'Desarrollador de apps ',
         company: 'AdvanCel (Start-up)',
         startDate: '2018',
         endDate: '2019',
@@ -141,7 +141,7 @@ export const expreriences = [
     },
     {
         num: '03',
-        title: 'Desarrollador FullStack',
+        title: 'Desarrollador Full Stack',
         company: 'Oca',
         startDate: '2019',
         endDate: '2025',
