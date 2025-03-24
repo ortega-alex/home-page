@@ -1,6 +1,7 @@
 "use client"
 
 import { routes } from '@/models/data'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
@@ -13,9 +14,16 @@ export const Header = () => {
 
     const { theme, setTheme } = useTheme()
     const pathname = usePathname()
+    const { scrollYProgress } = useScroll(); // Obtiene el progreso del scroll
+    const scale = useTransform(scrollYProgress, [0, 0.1], [1, 0.9]);
 
     return (
-        <header className='p-4 m-4 md:mx-32 md:my-12 sticky top-12 bg-black/20 rounded-lg z-10'>
+        <motion.header
+            className='p-4 m-4 md:mx-32 md:my-12 sticky top-12 bg-black/20 rounded-lg z-10'
+            style={{
+                scale
+            }}
+        >
             <div className="container mx-auto flex justify-between items-center">
                 <Link href={routes.about}>
                     <h1 className='text-4xl font-semibold'>
@@ -39,6 +47,6 @@ export const Header = () => {
                     }
                 </div>
             </div>
-        </header>
+        </motion.header>
     )
 }

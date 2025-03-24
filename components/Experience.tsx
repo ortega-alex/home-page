@@ -1,7 +1,9 @@
-import { expreriences } from '@/models/data'
-import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
-import { Button } from './ui/button'
+"use client";
+
+import { expreriences } from '@/models/data';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+import { Button } from './ui/button';
 
 export const Experience = () => {
     return (
@@ -18,7 +20,7 @@ export const Experience = () => {
                                         href={item.link}
                                         target='_blank'
                                         rel='noreferrer'
-                                        className='w-9 h-9 border border-green-400 rounded-full flex justify-center items-center text-green-400 hover:bg-green-400/90 hover:text-black hover:transition-all duration-500'
+                                        className='w-9 h-9 border border-green-400 rounded-full flex justify-center items-center text-green-400 hover:bg-green-400/90 hover:text-black hover:transition-all duration-500 hover:-rotate-45'
                                     >
                                         <ArrowRight />
                                     </Link>
