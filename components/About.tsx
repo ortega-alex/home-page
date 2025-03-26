@@ -34,7 +34,7 @@ export const About = () => {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="order-1 md:order-none mb-8 xl:mb-0">
+                    <div className="order-1 md:order-none">
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{
