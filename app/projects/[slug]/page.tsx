@@ -38,7 +38,7 @@ function ProyectDetail() {
                                 <div className="flex flex-col md:flex-row justify-around items-start gap-4 pb-2 border-b-2">
                                     <div>
                                         <h1 className='text-green-400'>{item.title}</h1>
-                                        <p className='max-w-[600px]'>{item.description}</p>
+                                        <pre className='max-w-[600px] whitespace-pre-wrap'>{item.description}</pre>
                                         <div className='flex justify-center mt-6'>
                                             <Button variant='outline' size='icon' disabled={item.link === ''}>
                                                 <Link href={item.link} target='_blank' rel='noreferrer'>

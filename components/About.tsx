@@ -16,7 +16,9 @@ export const About = () => {
                         <span className='text-lx'>Sotware Developer</span>
                         <h1>Hola Soy<br /><span className='text-green-400'> Marlon Ortega</span></h1>
                         <p className='max-w-[600px] mb-9'>
-                            Desarrollador con más de 8 años de experiencia. Profesional con sólida experiencia en desarrollo frontend, backend y autodidacta, combinando habilidades avanzadas en la creación de interfaces dinámicas con la gestión eficiente de servicios backend. Durante los últimos años, he trabajado en proyectos desafiantes que integran tecnologías modernas y soluciones escalables para cumplir con los objetivos del negocio.
+                            Desarrollador Full Stack con 8+ años de experiencia, especializado en
+                            desarrollos de aplicaciones web y móviles, optimización de bases de
+                            datos y diseño de soluciones escalables.
                         </p>
 
                         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 2, duration: 1 }}>
