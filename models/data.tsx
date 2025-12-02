@@ -175,7 +175,7 @@ Base de Datos: MySQL con modelos optimizados para operaciones logísticas
 Infraestructura: Contenedores Docker en AWS (EC2, RDS, S3)
 
 Características: WebSockets para tracking, generación PDF de documentos, integración APIs de transporte`,
-        image: '/smart-logistic.jpg',
+        image: '/smart-logistic.png',
         link: 'https://github.com/ortega-alex/smart-logistic',
         icon: <FaGithub />,
         skills: [
